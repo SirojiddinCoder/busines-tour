@@ -52,7 +52,7 @@ const CarouselItems = [
 
 const Home = () => {
   return (
-    <div>
+    <div className='carusel_container'>
       <Carousel autoplay>
         {CarouselItems.map((item) => (
           <div key={item.id} className='Carousel-content'>
@@ -63,6 +63,7 @@ const Home = () => {
               <a href="#contacts" className="home-btn">Borishni xohlaysizmi?</a>
               <div className="home-info-card">
                 <div className="home-left-icon-block">
+
                   <div className="home-card-block">
                     <div className="home-icon-user-line">
                       <CiUser />
@@ -82,11 +83,7 @@ const Home = () => {
                     </div>
                   </div>
                   
-
-
-
-{/* ====== */}
-<div className="home-card-block">
+                  <div className="home-card-block">
                     <div className="home-icon-user-line">
                       <FaHome />
                     </div>
@@ -95,11 +92,11 @@ const Home = () => {
                       <h3 className='home-item-text'>{item.Territory}</h3>
                     </div>
                   </div>
-
-
-
+                  <div className="home-card-block">
+                    <a href="#contacts" className="home-info-card-btn">Ko'proq bilish...</a>
+                  </div>
                 </div>
-                <a href="#contacts" className="home-info-card-btn">Ko'proq bilish...</a>
+                
               </div>
             </div>
             <img src={item.img} alt={item.title} />
