@@ -1,0 +1,144 @@
+.Carousel-content {
+  position: relative;
+  width: 100%;
+  height: 615px;
+}
+
+.Carousel-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Carousel-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  z-index: 1;
+}
+
+.text-container {
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: white;
+  text-align: center;
+}
+
+.home-content{
+  font-weight: 500;
+  font-size: 30px;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.home-title {
+  font-weight: 500;
+  font-size: 45px;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.home-btn {
+  font-size: 14px;
+  color: #22b3c1;
+  background-color: transparent;
+  border: 1px solid #22b3c1;
+  padding: 12px 30px;
+  display: inline-block;
+  border-radius: 25px;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  background-color: #22b3c1;
+  color: #fff;
+  margin-top: 20px; 
+  margin-bottom: 100px;
+}
+.home-btn:hover{
+  background-color: white;
+}
+/* ============== */
+.home-info-card{
+  width: 1100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+   
+}
+.home-icon-user-line{
+  color: #22b3c1;
+  font-size: 24px;
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  text-align: center;
+  line-height: 58px;
+  border: 1px solid #22b3c1;
+  border-radius: 50%;
+  float: left;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-card-block{
+  display: flex;
+  align-items: center;
+}
+.home-text-item{
+color: black;
+}
+.home-item-text{
+color: black;
+}
+.home-left-icon-block{
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+.home-info-card-btn{
+  font-size: 14px;
+  color: #fff;
+  background-color: #22b3c1;
+  border: 1px solid #22b3c1;
+  padding: 12px 30px;
+  display: inline-block;
+  border-radius: 25px;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .home-content {
+    font-size: 24px; /* Adjust font size for tablet */
+  }
+
+  .home-title {
+    font-size: 35px; /* Adjust font size for tablet */
+  }
+
+  .home-btn {
+    padding: 10px 20px; /* Adjust padding for tablet */
+  }
+
+  .home-left-icon-block {
+    gap: 10px; /* Adjusted gap for tablet */
+  }
+}
