@@ -27,7 +27,7 @@
 }
 .card_bg img:nth-child(1){
     width: 60%;
-    height: 78%;
+    height: 35%;
     object-fit: fill;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -49,14 +49,14 @@
     background-color: white;
     border-radius: 20px;
 }
-.tour-title{
+.tour-title-viza{
     text-align: center;
     margin-bottom: 20px;
     font-size: 35px;
     font-weight: 700;
     text-transform: capitalize;
     color: #2a2a2a;
-   margin-top: 130px;
+   margin-top: 10px;
 }
 .tour-text{
     font-size: 18px;
