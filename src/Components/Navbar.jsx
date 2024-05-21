@@ -74,7 +74,7 @@ export const Navbar = () => {
           <a href="#">RU</a>
           <a className="telegramIcon" href="#">
 
-          <FaTelegramPlane />
+          <FaTelegramPlane className="red"/>
           </a>
             <a className="instagramIcon" href="#">
             <AiOutlineInstagram className="red" />
