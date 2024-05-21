@@ -8,7 +8,8 @@ import { Input } from 'antd';
 
 export const Contacts = () => {
   return (
-    <div className='contacts_container'>
+    <>
+     <div className='contacts_container'>
       <div className='contacts'>
         <div className="contact-box">
           <p className='contact-text'>O'zingiz yoqtirganingizni tanlang</p>
@@ -38,7 +39,11 @@ export const Contacts = () => {
 
         {/* ============================Map============================== */}
 
-        <div className="map-container">
+      </div>
+      
+    </div>
+     <div className="contacts">
+     <div className="map-container ">
           <div className='map'>
             <YMaps>
               <Map
@@ -55,20 +60,72 @@ export const Contacts = () => {
           </div>
 
           <h1 className='form-name'>O'z <span className='color-text'>joyingizni</span> band<span className='color-text'>qiling</span></h1>
+       <div className="registration-form">
+       
           <div className='form-1'>
             <div className='name-form'>
-              <p>Ismingiz</p>
+              <p className='name'>Ismingiz</p>
+              <br />  
               <Input placeholder="Eshmat" />;
             </div>  
             <div className='name-form'>
-              <p>Telefon raqamingiz</p>
+              <p className='phone'>Telefon raqamingiz</p>
+              <br />
               <Input placeholder="+998993729998" />;
             </div>  
 
           </div>
+          <div className='form-2'>
+            <div className='name-form'>
+              <p className='name'>Necha kishisiz</p>
+              <br />  
+             <select className='select-one' name="name" id="formSelect">
+              <option value="1">1 yoki 2</option>
+              <option value="1">1</option>
+              <option value="1">2</option>
+              <option value="1">3</option>
+              <option value="1">4</option>
+              <option value="1">5</option>
+             </select>
+            </div>  
+            <div className='name-form'>
+              <p className='phone'>Telefon raqamingiz</p>
+                <br />
+                <Input type='date' />;
+            </div>  
+
+          </div>
+          <div className='form-3'>
+            <p className='address'>Manzilingizni tanlang</p>
+            <br />
+            <select className='select-two' name="name" id="formSelect">
+              <option value="1">Antalya </option>
+              <option value="1">Istanbul</option>
+              <option value="1">Dubai</option>
+              <option value="1">Xitoy</option>
+              <option value="1">AQSH</option>
+              <option value="1">Singapur</option>
+             </select>
+
+
+          </div>
+          <div className='form-3'>
+            <p className='address'>Visa turini tanlang</p>
+            <br />
+            <select className='select-two' name="name" id="formSelect">
+              <option value="1">Country</option>
+              <option value="1">England</option>
+              <option value="1">Japan</option>
+              <option value="1">Xitoy</option>
+                
+             </select>
+
+    <a className='submit-btn' href="#contacts">Band Qilish</a>
+          </div>
+       </div>
         </div>
-      </div>
-    </div>
+     </div>
+    </>
   )
 }
 
