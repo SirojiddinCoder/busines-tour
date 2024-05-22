@@ -64,7 +64,10 @@ margin-top: 15px;
     margin-left: 100px;
   }
   .container-fuild{
-    margin-top: 200px;
+    margin-top: 400px;
+  }
+  .test{
+    margin-top: 200px !important;
   }
 }
 @media (max-width:600px) {
