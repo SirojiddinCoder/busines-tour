@@ -69,6 +69,7 @@
   color: #fff;
   margin-top: 20px; 
   margin-bottom: 100px;
+  text-decoration: none;
 }
 .home-btn:hover{
   background-color: white;
@@ -84,8 +85,8 @@
 .home-icon-user-line{
   color: #22b3c1;
   font-size: 24px;
-  width: 60px;
-  height: 60px;
+  width: 49px;
+  height: 44px;
   display: inline-block;
   text-align: center;
   line-height: 58px;
@@ -104,9 +105,11 @@
 }
 .home-text-item{
 color: black;
+font-size: 10px;
 }
 .home-item-text{
 color: black;
+font-size: 15px;
 }
 .home-left-icon-block{
   display: grid;
@@ -118,15 +121,15 @@ color: black;
   color: #fff;
   background-color: #22b3c1;
   border: 1px solid #22b3c1;
-  padding: 12px 30px;
+  padding: 9px 23px;
   display: inline-block;
   border-radius: 25px;
   font-weight: 500;
   text-transform: capitalize;
-  letter-spacing: 0.5px;
   transition: all .3s;
   position: relative;
   overflow: hidden;
+  text-decoration: none;
 }
 
 
@@ -150,6 +153,20 @@ color: black;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+  }
+}
+
+
+@media screen and (max-width:400px) {
+  .home-info-card{
+    width: 335px;
+  }
+  .home-info-card-btn{
+    padding: 1px 40px;
+    font-size: 10px;
+  }
+  .home-item-text{
+    font-size: 8px;
   }
 }
 
@@ -273,8 +290,8 @@ color: black;
     max-width: 1320px;
     display: flex;
     justify-content: center;
-    border-radius: 56px;
-    padding: 28px;
+    border-radius: 70px;
+    /* padding: 10px; */
   }
   .home-left-icon-block{
     width: 90%;
@@ -290,3 +307,4 @@ color: black;
     align-items: center;
   }
 }
+

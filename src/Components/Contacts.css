@@ -1,3 +1,6 @@
+.row{
+    width: 100% !important;
+}
 
 .contacts_container{
     width: 100%;
@@ -13,9 +16,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    row-gap: 150px;
+    row-gap: 100px;
 
 
+}
+label{
+    opacity: 0.7;
 }
 .contact__btn{
     font-size: 14px;
@@ -29,6 +35,11 @@
     letter-spacing: 0.5px;
     transition: all .3s;
    text-decoration: none;
+}
+.contact__btn:hover{
+    background-color: aqua;
+    color: white;
+    transition: 0.1s all ease-in-out;
 }
 .contact-card{
         width: 30%;
@@ -141,12 +152,13 @@
 /* ===========Map========== */
 .map-container{
     width: 100%;
-    height: 1150px;
+    height: 1100px;
     background-color: #f9f9f9;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;  
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    margin-top: 130px;
 }
 
 .map{
@@ -245,4 +257,28 @@ label{
     overflow: hidden;
     text-decoration: none;
     margin-left: 98px;
+}
+
+@media (max-width:600px) {
+    .map-container{
+        margin-top: 400px;
+    }
+    
+}
+.registr-form-name{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: bold;
+    padding-top: 50px;
+}
+.form-info{
+color: #22b3c1;
+font-style: normal;
+
+}
+.contact-card:hover{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;    
+    transition: 0.2s all ease-in-out;
+    cursor: pointer;
 }

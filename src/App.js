@@ -23,7 +23,7 @@ import Footer from './Components/Footer';
       <Viza />
       <About />
       <About2 />
-      <Location />  
+      {/* <Location />   */}
       <Contacts />
       <Footer/>
     </>

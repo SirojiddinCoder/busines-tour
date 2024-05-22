@@ -131,5 +131,12 @@ ul li{
     font-size: 16px;
 }
 .card-tour-body, .card-tour-footer{
-   padding: 20px 25px;
+   padding: 6px 25px;
+}
+@media screen  and (max-width:400px){
+    .tour-title-viza{
+        font-size: 25px;
+        padding: 10px;
+    }
+    
 }

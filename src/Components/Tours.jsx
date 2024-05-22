@@ -123,7 +123,7 @@ export const Tours = () => {
     }
   };
   return (
-    <div className='tour_container'>
+    <div className='tour_container' id='tours'>
    <h1 className='tour-title'>Eng Yaxshi Haftalik Takliflarimiz</h1>
         <p className='tour-text'>
         Har bir shaharda faqat siz uchun tuzilgan eng yaxshi haftalik takliflarni kashf eting. <br />

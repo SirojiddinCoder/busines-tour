@@ -62,10 +62,10 @@ export const Navbar = () => {
           <img src={Logo} alt="" />
         </div>
         <div className="navbar-links-container">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#Tours">Tours</a>
-          <a href="#contact">Contacts</a>
+          <a className="nav_link" href="#home">Home</a>
+          <a className="nav_link" href="#about">About</a>
+          <a className="nav_link" href="#tours">Tours</a>
+          <a className="nav_link" href="#contact">Contacts</a>
         </div>
 
         <div className="navbar-icons-container">

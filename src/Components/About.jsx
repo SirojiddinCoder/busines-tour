@@ -24,7 +24,7 @@ const AboutData = [
 export const About = () => {
 
   return (
-    <div className='about_container'>
+    <div className='about_container' id='about'>
       <div className='about_cards'>
         <h2 className='about-title'>Chiptalarni Biz Bilan Arzon Va <br /> Oson Toping</h2>
         <p className='about-description'>Har bir shaharda eng yaxshi temir yo‘l va aviachipta biletlarini biz <br /> bilan toping</p>

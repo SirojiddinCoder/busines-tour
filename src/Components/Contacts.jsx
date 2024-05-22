@@ -4,16 +4,15 @@ import { IoCall } from "react-icons/io5";
 import { FaRegMessage } from "react-icons/fa6";
 import { CiLocationOn } from "react-icons/ci";
 import { Map, RouteButton, YMaps } from '@pbe/react-yandex-maps';
-import { Input } from 'antd';
 
 export const Contacts = () => {
   return (
     <>
-     <div className='contacts_container'>
+     <div className='contacts_container' id='contact'>
       <div className='contacts'>
         <div className="contact-box">
-          <p className='contact-text'>O'zingiz yoqtirganingizni tanlang</p>
-          <h2 className='contact-text-title'>O'z joyingizni band qiling</h2>
+          <p className='contact-text'>   yoqtirganingizni    tanlang</p>
+          <h2 className='contact-text-title'>O'z joyingizni band qiling</h2>  
           <p className='btn-text'>    
             <a className='contact__btn' href='#contacts'>Ko'proq bilish</a>
           </p>
@@ -48,7 +47,7 @@ export const Contacts = () => {
             <YMaps>
               <Map
                 defaultState={{
-                  center: [41.3112, 69.2797],
+                  center: [41.3112, 69.2797],   
                   zoom: 15,
                   controls: [],
                 }}
@@ -57,74 +56,84 @@ export const Contacts = () => {
                 <RouteButton options={{ float: "right" }} />
               </Map>
             </YMaps>
-          </div>
+          </div>  
+          <h4 className='registr-form-name'>
+        <span className='line'>  O'z </span>
 
-          <h1 className='form-name'>O'z <span className='color-text'>joyingizni</span> band<span className='color-text'>qiling</span></h1>
-       <div className="registration-form">
-       
-          <div className='form-1'>
-            <div className='name-form'>
-              <p className='name'>Ismingiz</p>
-              <br />  
-              <Input placeholder="Eshmat" />;
-            </div>  
-            <div className='name-form'>
-              <p className='phone'>Telefon raqamingiz</p>
-              <br />
-              <Input placeholder="+998993729998" />;
-            </div>  
+            <span className='form-info line'>joyingizni</span>
 
-          </div>
-          <div className='form-2'>
-            <div className='name-form'>
-              <p className='name'>Necha kishisiz</p>
-              <br />  
-             <select className='select-one' name="name" id="formSelect">
-              <option value="1">1 yoki 2</option>
+         <span className='line'>   band </span>
+
+            <span className='form-info line'>qiling</span>
+          </h4>
+        <div className='container p-0'>
+          <div className='row p-0 m-0'>
+                <div className="col-12 col-lg-6">
+                  <label for="exampleInputEmail1" class="form-label pt-4  ">Ismingiz</label>
+                  <input type="text" placeholder="Sirojiddin" class="form-control rounded-pill" id="exampleInputEmail1" aria-describedby="emailHelp"/>
+                </div>
+                <div className="col-12 col-lg-6">
+                  <label for="exampleInputEmail1" class="form-label pt-4 ">Telefon raqamingiz</label>
+                  <input type="tel"  placeholder="+998993729998"  class="form-control rounded-pill" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                </div>
+                <div className="col-12 col-lg-6">
+                <label for="exampleInputEmail1" class="form-label pt-4 ">Necha kishisiz</label>
+                <select class="form-select rounded-pill" aria-label="Default select example">
+               <option selected>ex.3 or 4 or 5</option>
               <option value="1">1</option>
-              <option value="1">2</option>
-              <option value="1">3</option>
-              <option value="1">4</option>
-              <option value="1">5</option>
-             </select>
-            </div>  
-            <div className='name-form'>
-              <p className='phone'>Telefon raqamingiz</p>
-                <br />
-                <Input type='date' />;
-            </div>  
-
-          </div>
-          <div className='form-3'>
-            <p className='address'>Manzilingizni tanlang</p>
-            <br />
-            <select className='select-two' name="name" id="formSelect">
-              <option value="1">Antalya </option>
-              <option value="1">Istanbul</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="3">4</option>
+              <option value="3">5</option>
+              <option value="3">6</option>
+                   </select>
+                </div>
+                <di v className="col-12 col-lg-6">
+                <label for="exampleInputEmail1" class="form-label pt-4 ">Uchish sanasi</label>
+    <input type="date" class="form-control rounded-pill" placeholder="dd/mm/yy"  id="exampleInputEmail1" aria-describedby="emailHelp"/>
+                </di>
+                <div className="col-12 ">
+                <label for="exampleInputEmail1" class="form-label pt-4 ">Manzilingizni tanlang</label>
+                <select class="form-select rounded-pill" aria-label="Default select example">
+               <option selected>Antalya</option>
               <option value="1">Dubai</option>
-              <option value="1">Xitoy</option>
-              <option value="1">AQSH</option>
-              <option value="1">Singapur</option>
-             </select>
+              <option value="2">Istanbul</option>
+              <option value="3">Xitoy</option>
+              <option value="3">Kanada</option>
+              <option value="3">AQSH</option>
+              <option value="3">Polsha</option>
+                   </select>
+                </div>
+                <div className="col-12 ">
+                <label for="exampleInputEmail1" class="form-label pt-4 ">Visa turini tanlang</label>
+                <select class="form-select rounded-pill" aria-label="Default select example">
+               <option selected>Country</option>
+              <option value="1">Europe</option>
+              <option value="2">England</option>
+              <option value="3">Japan</option>
+              <option value="3">China</option>
+              <option value="3">USA</option>
+              <option value="3">Oman</option>
+                   </select>
+                </div>
+               
+                <div className="col-12 p-2">
+                  <br />
+                  
+                <div class="d-grid gap-2">
+                    <button class="btn btn-info rounded-pill btn-hover text-white " type="button">Band   Qilish</button>
 
+                       </div>
 
+                </div>
           </div>
-          <div className='form-3'>
-            <p className='address'>Visa turini tanlang</p>
-            <br />
-            <select className='select-two' name="name" id="formSelect">
-              <option value="1">Country</option>
-              <option value="1">England</option>
-              <option value="1">Japan</option>
-              <option value="1">Xitoy</option>
-                
-             </select>
-
-    <a className='submit-btn' href="#contacts">Band Qilish</a>
-          </div>
-       </div>
+        </div>     
         </div>
+        
+     
+
      </div>
+    
     </>
   )
 }

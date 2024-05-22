@@ -52,7 +52,7 @@ const CarouselItems = [
 
 const Home = () => {
   return (
-    <div className='carusel_container'>
+    <div className='carusel_container' id='home'>
       <Carousel autoplay>
         {CarouselItems.map((item) => (
           <div key={item.id} className='Carousel-content'>

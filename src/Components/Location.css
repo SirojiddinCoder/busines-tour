@@ -39,7 +39,7 @@
   }
   
   .container {
-    height: 400px;
+    /* height: 400px; */
     display: flex;
     flex-wrap: nowrap;
     justify-content: start;
