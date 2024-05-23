@@ -148,10 +148,10 @@ export const Viza = () => {
                           <hr className='line' />
                           <div className='card-tour-body'>
                             <h4 className='tour-body-card-title'>{item.desc}</h4>
-                            <ul>
-                              <li><span><IoIosPricetags /></span>{item.descTitle}</li>
-                              <li><span><IoIosTime /></span>{item.descTitle2}</li>
-                              <li><span><TiInputChecked /></span>{item.location}</li>
+                            <ul className='ps-0'>
+                              <li><span><IoIosPricetags className='me-1' /></span>{item.descTitle}</li>
+                              <li><span><IoIosTime className='me-1' /></span>{item.descTitle2}</li>
+                              <li><span><TiInputChecked className='me-1' /></span>{item.location}</li>
                             </ul>
                           </div>
                           <div className='card-tour-footer'>

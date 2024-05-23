@@ -116,11 +116,11 @@ export const Tours = () => {
       items: 3
     },
     tablet: {
-      breakpoint: { max: 1330, min: 920 },
+      breakpoint: { max: 1330, min: 768 },
       items: 2
     },
     mobile: {
-      breakpoint: { max: 920, min: 0 },
+      breakpoint: { max: 768, min: 0 },
       items: 1
     }
   };
@@ -135,7 +135,7 @@ export const Tours = () => {
             <Carousel responsive={responsive}>
                 {silederTour.map((item, index)=>{
                   return (
-                      <div className='card_bg' key={index}>
+                      <div className='card_bg1' key={index}>
                         <img src={item.bg_card_img} alt="" />
                         <div className='card_tour'>
                           <div className='card-tour-header'>
@@ -152,10 +152,10 @@ export const Tours = () => {
                           <hr className='line' />
                           <div className='card-tour-body'>
                             <h4 className='tour-body-card-title'>{item.desc}</h4>
-                            <ul>
-                              <li><span><FaCar /></span>{item.descTitle}</li>
-                              <li><span><IoAirplane /></span>{item.descTitle2}</li>
-                              <li><span><IoLocation /></span>{item.location}</li>
+                            <ul className='ps-0'>
+                              <li><span><FaCar className='me-1' /></span>{item.descTitle}</li>
+                              <li><span><IoAirplane className='me-1' /></span>{item.descTitle2}</li>
+                              <li><span><IoLocation className='me-1' /></span>{item.location}</li>
                             </ul>
                           </div>
                           <div className='card-tour-footer'>

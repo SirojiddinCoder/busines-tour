@@ -38,20 +38,19 @@ const AboutData = [
         AboutData.map((item,index)=>{
           return(
             <div className="about-card">
-            <div className="about_card_left">
-              <img src={item.img1} alt="afr img" />
-            </div>
-            <div className="about_card_right">
-              <div className="about_card_left_header">
-        <p>
-          
-        <h2 className='about__item'>{item.aboutTitle}</h2> 
-                 <p className='about__desc'>{item.aboutTitleDesc}</p> 
-        </p>
-                <a className='about__btn' href='#contacts'>{t("ABOUT2.text6")}</a>
+              <div className="about_card_left">
+                <img src={item.img1} alt="afr img" />
               </div>
-              <p className='about__item-text'>{item.aboutText}</p>
-            </div>
+              <div className="about_card_right">
+                <div className="about_card_left_header">
+                  <p className='mb-0'>
+                    <h2 className='about__item mb-0'>{item.aboutTitle}</h2> 
+                    <p className='about__desc'>{item.aboutTitleDesc}</p> 
+                  </p>
+                  <a className='about__btn' href='#contacts'>{t("ABOUT2.text6")}</a>
+                </div>
+                <p className='about__item-text'>{item.aboutText}</p>
+              </div>
           </div>
           )
         })

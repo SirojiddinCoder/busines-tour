@@ -25,6 +25,7 @@
     max-width: 100%;
     overflow-x: hidden;
   }
+  
 
   nav { 
     display: flex;
@@ -78,7 +79,7 @@
     }
    
   }
-  @media (max-width: 800px) {
+  @media (max-width: 840px) {
     .nav-logo-container {
       max-width: 140px;
     }

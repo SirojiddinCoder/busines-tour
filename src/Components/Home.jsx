@@ -23,7 +23,7 @@ const Home = () => {
       img: img1,
       Population: '44.48 M',
       Territory: '275.400 KM2',
-     price:'$946.000'
+      price:'$946.000'
   
     },
     {
