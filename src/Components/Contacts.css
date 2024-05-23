@@ -282,3 +282,11 @@ font-style: normal;
     transition: 0.2s all ease-in-out;
     cursor: pointer;
 }
+
+/* Contacts.css */
+.custom-toast-container .Toastify__toast {
+    min-width: 400px;
+    min-height: 100px;
+    font-size: 1.2em;
+  }
+  
