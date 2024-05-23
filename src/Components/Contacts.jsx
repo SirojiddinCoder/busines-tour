@@ -1,11 +1,56 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Contacts.css';
 import { IoCall } from "react-icons/io5";
 import { FaRegMessage } from "react-icons/fa6";
 import { CiLocationOn } from "react-icons/ci";
 import { Map, RouteButton, YMaps } from '@pbe/react-yandex-maps';
+import axios from 'axios';
 
 export const Contacts = () => {
+
+  const [loading,setLoading] = useState(false)
+
+
+
+const SendMessage = (event)=>{
+  setLoading(true)
+  event.preventDefault();
+  const token ="7045954792:AAFQAI9R6q9CQ5veso12Ijc5dWToIVCMOj4";
+  const URL = `https://api.telegram.org/bot${token}/sendMessage`;
+
+  const chat_id = '5011507273';
+  const name = document.getElementById('name').value;
+  const telRaqam = document.getElementById('telRaqam').value;
+  const kishi = document.getElementById('kishi').value;
+  const date = document.getElementById('date').value;
+  const adress = document.getElementById('adress').value;
+  const viza = document.getElementById('viza').value;
+
+  const MessageContent = `ismi : ${name} \n Tel: ${telRaqam} \n Kishi soni: ${kishi} \n Uchish sanasi: ${date} \n  Borish manazili:${adress} \n tolov turi:${viza}`
+
+
+  axios({
+    url:URL,
+    method: 'POST',
+    data:{
+      "chat_id":chat_id,
+      "text":MessageContent,
+     
+
+    }
+
+  }).then((res)=>{
+    document.getElementById('MyForm').reset()
+      alert('muvofaqiyatli yuborildi')  
+  }).catch((error)=>{
+    console.log('Xatolik yuz berdi',error);
+  }).finally(()=>{
+    setLoading(false)
+  }) 
+
+}
+
+
   return (
     <>
      <div className='contacts_container' id='contact'>
@@ -69,16 +114,25 @@ export const Contacts = () => {
         <div className='container p-0'>
           <div className='row p-0 m-0'>
                 <div className="col-12 col-lg-6">
-                  <label for="exampleInputEmail1" class="form-label pt-4  ">Ismingiz</label>
-                  <input type="text" placeholder="Sirojiddin" class="form-control rounded-pill" id="exampleInputEmail1" aria-describedby="emailHelp"/>
+
+                  {/* forma============== */}
+
+<form id="MyForm" onSubmit={SendMessage}>
+<label for="exampleInputEmail1" class="form-label pt-4  ">Ismingiz</label>
+                  <input type="text" placeholder="Sirojiddin" class="form-control rounded-pill" id="name" aria-describedby="emailHelp"/>
+                
+</form>
                 </div>
                 <div className="col-12 col-lg-6">
-                  <label for="exampleInputEmail1" class="form-label pt-4 ">Telefon raqamingiz</label>
-                  <input type="tel"  placeholder="+998993729998"  class="form-control rounded-pill" id="exampleInputEmail1" aria-describedby="emailHelp" />
+<form  id="MyForm" onSubmit={SendMessage}>
+<label for="exampleInputEmail1" class="form-label pt-4 ">Telefon raqamingiz</label>
+                  <input type="tel"  placeholder="+998993729998"  class="form-control rounded-pill" id="telRaqam" aria-describedby="emailHelp" />
+</form>
                 </div>
                 <div className="col-12 col-lg-6">
-                <label for="exampleInputEmail1" class="form-label pt-4 ">Necha kishisiz</label>
-                <select class="form-select rounded-pill" aria-label="Default select example">
+             <form  id="MyForm" onSubmit={SendMessage}>
+             <label for="exampleInputEmail1" class="form-label pt-4 ">Necha kishisiz</label>
+                <select class="form-select rounded-pill" aria-label="Default select example" id="kishi">
                <option selected>ex.3 or 4 or 5</option>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -87,45 +141,53 @@ export const Contacts = () => {
               <option value="3">5</option>
               <option value="3">6</option>
                    </select>
+             </form>
                 </div>
-                <di v className="col-12 col-lg-6">
-                <label for="exampleInputEmail1" class="form-label pt-4 ">Uchish sanasi</label>
-    <input type="date" class="form-control rounded-pill" placeholder="dd/mm/yy"  id="exampleInputEmail1" aria-describedby="emailHelp"/>
-                </di>
+                <div className="col-12 col-lg-6">
+        <form>
+        <label for="exampleInputEmail1" class="form-label pt-4 ">Uchish sanasi</label>
+    <input type="date" class="form-control rounded-pill" placeholder="dd/mm/yy"  id="date" aria-describedby="emailHelp"/>
+        </form>
+                </div>
                 <div className="col-12 ">
-                <label for="exampleInputEmail1" class="form-label pt-4 ">Manzilingizni tanlang</label>
-                <select class="form-select rounded-pill" aria-label="Default select example">
+             <form  id="MyForm" onSubmit={SendMessage}>
+             <label for="exampleInputEmail1" class="form-label pt-4 ">Manzilingizni tanlang</label>
+                <select class="form-select rounded-pill" aria-label="Default select example" id="adress">
                <option selected>Antalya</option>
-              <option value="1">Dubai</option>
-              <option value="2">Istanbul</option>
-              <option value="3">Xitoy</option>
-              <option value="3">Kanada</option>
-              <option value="3">AQSH</option>
-              <option value="3">Polsha</option>
+              <option value="Dubai">Dubai</option>
+              <option value="Istanbul">Istanbul</option>
+              <option value="Xitoy">Xitoy</option>
+              <option value="Kanada">Kanada</option>
+              <option value="AQSH">AQSH</option>
+              <option value="Polsha">Polsha</option>
                    </select>
+             </form>
                 </div>
                 <div className="col-12 ">
-                <label for="exampleInputEmail1" class="form-label pt-4 ">Visa turini tanlang</label>
-                <select class="form-select rounded-pill" aria-label="Default select example">
+            <form  id="MyForm" onSubmit={SendMessage}>
+            <label for="exampleInputEmail1" class="form-label pt-4 ">Visa turini tanlang</label>
+                <select class="form-select rounded-pill" aria-label="Default select example" id="viza">
                <option selected>Country</option>
-              <option value="1">Europe</option>
-              <option value="2">England</option>
-              <option value="3">Japan</option>
-              <option value="3">China</option>
-              <option value="3">USA</option>
-              <option value="3">Oman</option>
+              <option value="Europe">Europe</option>
+              <option value="England">England</option>
+              <option value="Japan">Japan</option>
+              <option value="China">China</option>
+              <option value="USA">USA</option>
+              <option value="Oman">Oman</option>
                    </select>
-                </div>
-               
+                    
                 <div className="col-12 p-2">
                   <br />
                   
                 <div class="d-grid gap-2">
-                    <button class="btn btn-info rounded-pill btn-hover text-white " type="button">Band   Qilish</button>
+                    <button class="btn btn-info rounded-pill btn-hover text-white " type="submit" loading={loading}>{loading? "Yuborilmoqda..." : "Yuborish"}</button>
 
                        </div>
 
                 </div>
+            </form>
+                </div>
+              
           </div>
         </div>     
         </div>
