@@ -2,34 +2,37 @@ import React from 'react'
 import './About.css'
 import afr from '../assets/img/afr.jpg';
 import pilot1 from '../assets/img/airplane.jpg'
+import { useTranslation } from 'react-i18next';
 
+
+
+export const About2 = () => {
+  const {t} = useTranslation()
+
+  
 const AboutData = [
   {
     id:1,
     img1:afr,
     aboutTitle:'Dubai',
-    aboutTitleDesc:"Birlashgan Arab Amirliklari",
-    aboutText:"Dubay - Birlashgan Arab Amirliklaridagi shahar va amirlik, hashamatli xaridlar, ultramodern arxitektura va jonli tungi hayot sahnasi bilan mashhur. Balandligi 830 m bo'lgan Burj Xalifa minorasi osmono'par binolar bilan to'ldirilgan osmon chizig'ida hukmronlik qiladi. Uning etagida musiqaga xoreografiya qilingan samolyotlar va chiroqlar bilan jihozlangan Dubay favvorasi joylashgan. Sun'iy orollarda Atlantis, Palm, suv va dengiz hayvonlari bog'lari joylashgan kurort joylashgan."
+    aboutTitleDesc:t("ABOUT2.TEXT4"),
+    aboutText:t("ABOUT2.TEXT5"),
   },
   { 
     id:2,
     img1:pilot1,
     aboutTitle:'Antalya',
     aboutTitleDesc:"Turkiya",
-    aboutText:"Antaliya Turkiyaning eng tez rivojlanayotgan shahri bo'lib, butun dunyodan kelgan sayyohlar uning ajoyib plyajlari va an'anaviy turk madaniyatining ajoyib aralashmasini kashf qilmoqdalar. Bolalarga Aqua Land (suvli slaydni yaxshi ko'radiganlar orzusi) va Dolphin Land (delfinlar, dengiz sherlari va oq kitlarning uyi) o'rin olgan Beach Park yoqadi. Eski shahar markazini o'rganing va Hadrian darvozasini ko'ring."
+    aboutText:t("ABOUT2.TEXT6"),
   }
 ]
-
-
-export const About2 = () => {
 
   return (
     <div className='about_container'>
       <div className='about_cards'>
-        <h2 className='about-title'>Shaharlardan Biriga Hoziroq <br /> Tashrif Buyuring</h2>
+        <h2 className='about-title'>{t("ABOUT2.text1")}</h2>
         <p className='about-description'>
-        Har bir shahardagi eng yaxshi takliflarimizni kashf eting, faqat siz <br /> uchun. O'zingiz uchun yangi dunyosni oching va misli ko'rilmagan <br />
-         sarguzashtlar ega bo'ling.
+        {t("ABOUT2.text2")}
            </p>
        
        {
@@ -46,7 +49,7 @@ export const About2 = () => {
         <h2 className='about__item'>{item.aboutTitle}</h2> 
                  <p className='about__desc'>{item.aboutTitleDesc}</p> 
         </p>
-                <a className='about__btn' href='#contacts'>Ko'proq bilish</a>
+                <a className='about__btn' href='#contacts'>{t("ABOUT2.text6")}</a>
               </div>
               <p className='about__item-text'>{item.aboutText}</p>
            

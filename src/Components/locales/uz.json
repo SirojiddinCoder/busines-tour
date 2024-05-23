@@ -1,0 +1,113 @@
+{
+    "header":{
+     "menu1":"Bosh sahifa",
+     "menu2":"Biz haqimizda",
+     "menu3":"Sayohatlar",
+     "menu4":"Bog'lanish"
+     
+    },
+    "home":{
+     "title":"Siz yoqtirib qolishingiz aniq bo'lgan shahar:",
+     "desc":"Istanbul",
+     "button1":"Borishni xoxlaysizmi",
+     "button2":"Ko'proq bilish",
+     "Aholisi":"Aholisi:",
+     "Hududi:":"Hududi:",
+     "O'rtacha narx:":"O'rtacha narx:",
+     "button22":"Ko'proq bilish",
+     "desc1":"Antalya",
+     "desc2":"Sharm El-Sheikh",
+     "desc3":"Dubai",
+     "narxi":"O'rtacha Narx"
+    },
+    "Tours":{
+        "title":"Eng Yaxshi Haftalik Takliflarimiz",
+        "desc":"Har bir shaharda faqat siz uchun tuzilgan eng yaxshi haftalik takliflarni kashf eting. O'zingizni sarguzashtlar dunyosida his qiling.",
+       "person":"415 buyurtmalar ",
+       "kishi":"kishi",
+       "desc11":"tur o'z ichiga oladi",
+       "descTitle":"5 kunlik sayohat > Mehmonxona",
+       "descTitle2":"Aviabilet",
+       "location":" Eng yaxshi manzillar",
+
+
+
+  
+       "persons1": "410 buyurtmalar ",
+       "kishi1": "/kishi",
+       "desc1": "tur o'z ichiga oladi",
+       "descTitle1": " 8 kunlik sayohat > Mehmonxona",
+        "descTitle21": "Aviabilet",
+        "location1": " Eng yaxshi manzillar",
+      "TourBtn":"Joy band qilish"
+
+   
+ 
+    },
+    "Footer":{
+        "name":"SAYOHAT QILISHNI XOHLAYSIZMI?",
+        "desc":"Unda biz bilan hoziroq bog'laning",
+        "btn":"Bog'lanish"
+    },
+    "Contacts":{
+      "text":"yoqtirganingizni tanlang",
+      "text1":"O'z joyingizni band qiling",
+      "text2":"Ko'proq bilish",
+      "text3":"telefon raqam",
+      "text4":"Bizga email orqali bog'laning",
+      "text5":"Ofisimizga tashrif buyuring",
+      "text6":"15/25, Chilanzar - 9, Tashkent shahar",
+
+      "OZ":"O'z",
+      "joy":"joyingizni",
+      "b":"band",
+      "q":"qiling",
+
+      "Ism":"Ismingiz",
+      "tel":"Telefon raqamingiz",
+      "Necha":"Necha kishisiz",
+      "uchish":"Uchish sanasi",
+      "Manzil":"Manzilingizni tanlang",
+      "viza":"Visa turini tanlang"
+
+
+    },
+    "VIZA":{
+      "text1":"Viza Olishga Yordam Beramiz",
+      "text2":"Biz sizga oson, tez fursatda va albatta ishonchli viza olishga yordam beramiz.",
+      "text3":"Joy band qilish",
+
+
+      "TEXTV1":"234 Ro‘yxatdan o‘tganlar",
+      "TEXTV2":"Biznig xizmatlar o‘z ichiga oladi:",
+      "TEXTV3":"Eng arzon narxlar",
+      "TEXTV4":"Tezkor ishlash vaqti",
+      "TEXTV5":"Ishonchli yordam"
+
+    },
+    "ABOUT":{
+      "text1":"Chiptalarni Biz Bilan Arzon Va Oson Toping",
+      "text2":"Har bir shaharda eng yaxshi temir yo‘l va aviachipta biletlarini biz bilan toping"
+    },
+    "ABOUT2":{
+      "text1":"Shaharlardan Biriga Hoziroq Tashrif Buyuring",
+      "text2":"Har bir shahardagi eng yaxshi takliflarimizni kashf eting, faqat siz uchun. O'zingiz uchun yangi dunyosni oching va misli ko'rilmagan sarguzashtlar ega bo'ling.",
+      
+      
+      "text3":"Temir Yo‘l Biletleri Biz Bilan",
+      "text4":"Butun dunyo bo'ylab",
+      "text5":"Temir yo'l orqali biz bilan sarguzashtlarni kashf eting! Baland tog'larni, betakror tabiat manzalarni, qadimiy va navqiron shaharlarni, takrorlanmas landshaflarni biz bilan birga toping. Qiziqarlimi? Biz bilan bog'laning",
+      "text6":"Ko'proq bilish",
+
+
+      "TEXT1":"Aviabiletlar Biz Bilan Arzon",
+      "TEXT2":"Jahon bo‘ylab Manzillar",
+      "TEXT3":"Eng arzon, qulay, xavfsiz aviabiletlar biz bilan! Bizga bog'laning, biz sizga eng maqbul bo'ladigan aviabilerni topib beramiz",
+      "TEXT4":"Birlashgan Arab Amirliklari",
+      "TEXT5":"Dubay - Birlashgan Arab Amirliklaridagi shahar va amirlik, hashamatli xaridlar, ultramodern arxitektura va jonli tungi hayot sahnasi bilan mashhur. Balandligi 830 m bo'lgan Burj Xalifa minorasi osmono'par binolar bilan to'ldirilgan osmon chizig'ida hukmronlik qiladi. Uning etagida musiqaga xoreografiya qilingan samolyotlar va chiroqlar bilan jihozlangan Dubay favvorasi joylashgan. Sun'iy orollarda Atlantis, Palm, suv va dengiz hayvonlari bog'lari joylashgan kurort joylashgan. ",
+      "TEXT6":"Antaliya Turkiyaning eng tez rivojlanayotgan shahri bo'lib, butun dunyodan kelgan sayyohlar uning ajoyib plyajlari va an'anaviy turk madaniyatining ajoyib aralashmasini kashf qilmoqdalar. Bolalarga Aqua Land (suvli slaydni yaxshi ko'radiganlar orzusi) va Dolphin Land (delfinlar, dengiz sherlari va oq kitlarning uyi) o'rin olgan Beach Park yoqadi. Eski shahar markazini o'rganing va Hadrian darvozasini ko'ring."
+
+
+    }
+ 
+ }

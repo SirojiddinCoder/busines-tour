@@ -1,18 +1,20 @@
 import React from 'react'
 import './Footer.css';
+import { useTranslation } from 'react-i18next';
 
 export const Footer = () => {
+  const {t} = useTranslation()
   return (
  <>
    <div className="container-fuild test">
      <div className='container p-0'>
         <div className="row pt-5">
             <div className="col-12 col-lg-10">
-                 <h1 className='footer-name'>SAYOHAT QILISHNI XOHLAYSIZMI?</h1>
-                 <p className='footer-text-1'>Unda biz bilan hoziroq bog'laning</p>
+                 <h1 className='footer-name'>{t("Footer.name")}</h1>
+                 <p className='footer-text-1'>{t("Footer.desc")}</p>
             </div>
             <div className="col-12 col-lg-2">
-               <a className='footer-btn' href="#contacts">Bog'lanish</a>
+               <a className='footer-btn' href="#contacts">{t("Footer.btn")}</a>
             </div>
 
         </div>

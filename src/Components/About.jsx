@@ -2,32 +2,37 @@ import React from 'react'
 import './About.css'
 import afr from '../assets/img/afr.jpg';
 import pilot1 from '../assets/img/airplane.jpg'
+import { useTranslation } from 'react-i18next';
 
+
+export const About = () => {
+  const {t} = useTranslation()
+  
 const AboutData = [
   {
     id:1,
     img1:afr,
-    aboutTitle:' Temir Yo‘l Biletleri Biz Bilan',
-    aboutTitleDesc:"Butun dunyo bo'ylab",
-    aboutText:"Temir yo'l orqali biz bilan sarguzashtlarni kashf eting! Baland tog'larni, betakror tabiat  manzalarni, qadimiy va navqiron shaharlarni, takrorlanmas landshaflarni biz bilan birga toping. Qiziqarlimi? Biz bilan bog'laning."
+    aboutTitle:t("ABOUT2.text3"),
+    aboutTitleDesc:t("ABOUT2.text4"),
+    aboutText:t("ABOUT2.text5"),
   },
   { 
     id:2,
     img1:pilot1,
-    aboutTitle:' Aviabiletlar Biz Bilan Arzon',
-    aboutTitleDesc:"Jahon bo‘ylab Manzillar",
-    aboutText:"Eng arzon, qulay, xavfsiz aviabiletlar biz bilan! Bizga bog'laning, biz sizga eng maqbul bo'ladigan aviabilerni topib beramiz"
+    aboutTitle:t("ABOUT2.TEXT1"),
+    aboutTitleDesc:t("ABOUT2.TEXT2"),
+    aboutText:t("ABOUT2.TEXT3"),
   }
 ]
-
-
-export const About = () => {
+  
 
   return (
     <div className='about_container' id='about'>
       <div className='about_cards'>
-        <h2 className='about-title'>Chiptalarni Biz Bilan Arzon Va <br /> Oson Toping</h2>
-        <p className='about-description'>Har bir shaharda eng yaxshi temir yo‘l va aviachipta biletlarini biz <br /> bilan toping</p>
+        <h2 className='about-title'>{t("ABOUT.text1")}</h2>
+        <p className='about-description'>
+        {t("ABOUT.text2")}
+        </p>
        
        {
         AboutData.map((item,index)=>{
@@ -43,7 +48,7 @@ export const About = () => {
         <h2 className='about__item'>{item.aboutTitle}</h2> 
                  <p className='about__desc'>{item.aboutTitleDesc}</p> 
         </p>
-                <a className='about__btn' href='#contacts'>Ko'proq bilish</a>
+                <a className='about__btn' href='#contacts'>{t("ABOUT2.text6")}</a>
               </div>
               <p className='about__item-text'>{item.aboutText}</p>
             </div>

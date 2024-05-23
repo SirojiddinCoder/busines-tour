@@ -1,0 +1,100 @@
+{
+  "header": {
+      "menu1": "Home",
+      "menu2": "About Us",
+      "menu3": "Tours",
+      "menu4": "Contact"
+  },
+  "home": {
+      "title": "A city you're sure to love:",
+      "desc": "Istanbul",
+      "button1": "Want to visit?",
+      "button2": "Learn More",
+      "Aholisi": "Population:",
+      "Hududi:": "Area:",
+      "O'rtacha narx:": "Average Cost:",
+      "desc1": "Antalya",
+      "desc2": "Sharm El-Sheikh",
+      "desc3": "Dubai",
+      "narxi": "Average Price"
+  },
+  "Tours": {
+      "title": "Our Best Weekly Offers",
+      "desc": "Discover the best weekly offers tailor-made for you in every city. Immerse yourself in the world of adventures.",
+      "person": "415 orders ",
+      "kishi": "people",
+      "desc11": "tour includes",
+      "descTitle": "5-day trip > Hotel",
+      "descTitle2": "Air ticket",
+      "location": " Best locations",
+
+
+
+      "persons1": "410 orders ",
+      "kishi1": "people",
+      "desc1": "tour includes",
+      "descTitle1": "8-day trip > Hotel",
+      "descTitle21": "Air ticket",
+      "location1": " Best locations",
+      "TourBtn": "Book Now"
+  },
+  "Footer": {
+      "name": "WANT TO TRAVEL?",
+      "desc": "Then contact us now",
+      "btn": "Contact Us"
+  },
+  "Contacts": {
+      "text": "Choose what you like",
+      "text1": "Book your own place",
+      "text2": "Learn More",
+      "text3": "Phone number",
+      "text4": "Contact us by email",
+      "text5": "Visit our office",
+      "text6": "15/25, Chilanzar - 9, Tashkent city",
+
+      "OZ": "Your",
+      "joy": "place",
+      "b": "book",
+      "q": "now",
+
+      "Ism": "Your Name",
+      "tel": "Your Phone Number",
+      "Necha": "Number of Persons",
+      "uchish": "Date of Arrival",
+      "Manzil": "Choose Your Destination",
+      "viza": "Choose Visa Type"
+  },
+  "VIZA": {
+    "text1": "We Assist You in Obtaining a Visa",
+    "text2": "We assist you in obtaining a visa easily, quickly, and certainly.",
+    "text3": "Book Now",
+
+    "TEXTV1": "234 Passed",
+  "TEXTV2": "Our services include:",
+  "TEXTV3": "Lowest prices",
+  "TEXTV4": "Fast processing time",
+  "TEXTV5": "Reliable assistance"
+},
+"ABOUT": {
+    "text1": "Find Cheap and Convenient Tickets with Us",
+    "text2": "Find the best train and plane tickets in every city with us"
+},
+"ABOUT2": {
+    "text1": "Visit One City to Another Now",
+    "text2": "Discover our best offers in every city, just for you. Open up a new world for yourself and experience unimaginable adventures.",
+    "text3": "Train Tickets with Us",
+    "text4": "Across the Globe",
+    "text5": "Explore travels with us by train! Discover towering mountains, breathtaking natural landscapes, ancient and fascinating cities, unique landscapes with us. Intrigued? Get in touch with us.",
+    "text6": "Learn More",
+    "TEXT1": "Affordable Airfares with Us",
+    "TEXT2": "Destinations Worldwide",
+    "TEXT3": "The most affordable, convenient, and safe airfares with us! Contact us, and we'll help you find the most suitable flights.",
+    "TEXT4": "United Arab Emirates",
+    "TEXT5": "Dubai - the city and emirate in the United Arab Emirates, famed for luxurious shopping centers, ultramodern architecture, and vibrant nightlife. At 830 meters tall, Burj Khalifa skyscraper reigns over the sky filled with space-age skyscrapers. Dubai Fountain, with choreographed music, jets, and lights, is located at the base of Burj Khalifa. Artificial resort Atlantis, The Palm, encompasses water and marine parks.",
+    "TEXT6": "Antalya is Turkey's fastest-growing city, where travelers from around the world discover wonderful beaches and an amazing blend of traditional Turkish culture. Children will enjoy the Beach Park with Aqua Land (slides for thrill-seekers) and Dolphin Land (home to dolphins, sea lions, and beluga whales). Explore the old city center and see the Hadrian's Gate." 
+
+
+
+}
+
+}

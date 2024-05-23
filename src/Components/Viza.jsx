@@ -7,85 +7,96 @@ import { PiUsersThreeDuotone } from "react-icons/pi";
 import { IoIosPricetags } from "react-icons/io";
 import { IoIosTime } from "react-icons/io";
 import { TiInputChecked } from "react-icons/ti";
+import { useTranslation } from 'react-i18next';
 
 export const Viza = () => {
+  const {t} = useTranslation()
   let silederTour = [
     {
+      name: "Xong Kong",
         bg_card_img: img1,
-        name: "Xong Kong",
-        persons: "234 Ro‘yxatdan o‘tganlar",
+        persons: t("VIZA.TEXTV1"),
         icon1: PiUsersThreeDuotone,
-        desc: "Biznig xizmatlar o‘z ichiga oladi:",
+        desc:t("VIZA.TEXTV2"),
         icon2: IoIosPricetags,
-        descTitle: "  Eng arzon narxlar",
-         descTitle2: " Tezkor ishlash vaqti",
+        descTitle: t("VIZA.TEXTV3"),
+         descTitle2: t("VIZA.TEXTV4"),
         icon3: IoIosTime ,
-        location: "  Ishonchli yordam",
+        location: t("VIZA.TEXTV5"),
         icon4: TiInputChecked,
       },
       {
-        bg_card_img: img1,
         name: "Hindiston",
-        persons: "234 Ro‘yxatdan o‘tganlar",
+
+
+
+        bg_card_img: img1,
+        persons: t("VIZA.TEXTV1"),
         icon1: PiUsersThreeDuotone,
-        desc: "Biznig xizmatlar o‘z ichiga oladi:",
+        desc:t("VIZA.TEXTV2"),
         icon2: IoIosPricetags,
-        descTitle: "  Eng arzon narxlar",
-         descTitle2: " Tezkor ishlash vaqti",
+        descTitle: t("VIZA.TEXTV3"),
+         descTitle2: t("VIZA.TEXTV4"),
         icon3: IoIosTime ,
-        location: "  Ishonchli yordam",
+        location: t("VIZA.TEXTV5"),
         icon4: TiInputChecked,
       },
       {
-        bg_card_img: img1,
+
         name: "Yaponiya",
-        persons: "234 Ro‘yxatdan o‘tganlar",
+
+        bg_card_img: img1,
+        persons: t("VIZA.TEXTV1"),
         icon1: PiUsersThreeDuotone,
-        desc: "Biznig xizmatlar o‘z ichiga oladi:",
+        desc:t("VIZA.TEXTV2"),
         icon2: IoIosPricetags,
-        descTitle: "  Eng arzon narxlar",
-         descTitle2: " Tezkor ishlash vaqti",
+        descTitle: t("VIZA.TEXTV3"),
+         descTitle2: t("VIZA.TEXTV4"),
         icon3: IoIosTime ,
-        location: "  Ishonchli yordam",
+        location: t("VIZA.TEXTV5"),
         icon4: TiInputChecked,
       },
       {
-        bg_card_img: img1,
         name: "BAA",
-        persons: "234 Ro‘yxatdan o‘tganlar",
+
+        bg_card_img: img1,
+        persons: t("VIZA.TEXTV1"),
         icon1: PiUsersThreeDuotone,
-        desc: "Biznig xizmatlar o‘z ichiga oladi:",
+        desc:t("VIZA.TEXTV2"),
         icon2: IoIosPricetags,
-        descTitle: "  Eng arzon narxlar",
-         descTitle2: " Tezkor ishlash vaqti",
+        descTitle: t("VIZA.TEXTV3"),
+         descTitle2: t("VIZA.TEXTV4"),
         icon3: IoIosTime ,
-        location: "  Ishonchli yordam",
+        location: t("VIZA.TEXTV5"),
         icon4: TiInputChecked,
       },
       {
-        bg_card_img: img1,
+
         name: "Xiyot",
-        persons: "234 Ro‘yxatdan o‘tganlar",
+
+        bg_card_img: img1,
+        persons: t("VIZA.TEXTV1"),
         icon1: PiUsersThreeDuotone,
-        desc: "Biznig xizmatlar o‘z ichiga oladi:",
+        desc:t("VIZA.TEXTV2"),
         icon2: IoIosPricetags,
-        descTitle: "  Eng arzon narxlar",
-         descTitle2: " Tezkor ishlash vaqti",
+        descTitle: t("VIZA.TEXTV3"),
+         descTitle2: t("VIZA.TEXTV4"),
         icon3: IoIosTime ,
-        location: "  Ishonchli yordam",
+        location: t("VIZA.TEXTV5"),
         icon4: TiInputChecked,
       },
       {
-        bg_card_img: img1,
         name: "Omon",
-        persons: "234 Ro‘yxatdan o‘tganlar",
+
+        bg_card_img: img1,
+        persons: t("VIZA.TEXTV1"),
         icon1: PiUsersThreeDuotone,
-        desc: "Biznig xizmatlar o‘z ichiga oladi:",
+        desc:t("VIZA.TEXTV2"),
         icon2: IoIosPricetags,
-        descTitle: "  Eng arzon narxlar",
-         descTitle2: " Tezkor ishlash vaqti",
+        descTitle: t("VIZA.TEXTV3"),
+         descTitle2: t("VIZA.TEXTV4"),
         icon3: IoIosTime ,
-        location: "  Ishonchli yordam",
+        location: t("VIZA.TEXTV5"),
         icon4: TiInputChecked,
       },
   ]
@@ -111,9 +122,9 @@ export const Viza = () => {
   };
   return (
     <div className='tour_container'>
-   <h1 className='tour-title-viza'>Viza Olishga Yordam Beramiz</h1>
+   <h1 className='tour-title-viza'>{t("VIZA.text1")}</h1>
         <p className='tour-text'>
-        Biz sizga oson, tez fursatda va albatta ishonchli viza olishga yordam beramiz.
+        {t("VIZA.text2")}
         </p>
         <div className="tour_slider">
           <div className="slider-container">
@@ -144,7 +155,7 @@ export const Viza = () => {
                             </ul>
                           </div>
                           <div className='card-tour-footer'>
-                            <a className='tour-card-footer-btn' href="#contacts">Joy band qilish</a>
+                            <a className='tour-card-footer-btn' href="#contacts">{t("VIZA.text3")}</a>
                           </div>
                         
                         </div>

@@ -7,98 +7,100 @@ import { PiUsersThreeDuotone } from "react-icons/pi";
 import { FaCar } from "react-icons/fa6";
 import { IoAirplane } from "react-icons/io5";
 import { IoLocation } from "react-icons/io5";
+import { useTranslation } from 'react-i18next';
 
 export const Tours = () => {
+  const {t} = useTranslation()
+
   let silederTour = [
     {
       bg_card_img: img1,
       name: "Dubai",
-      persons: "415 buyurtmalar ",
+      persons: t("Tours.title"),
       price: "$810",
-      kishi: "/kishi",
+      kishi: t("Tours.kishi"),
       icon1: PiUsersThreeDuotone,
-      desc: "tur o'z ichiga oladi",
+      desc: t("Tours.desc11"),
       icon2: FaCar,
-      descTitle: " 5 kunlik sayohat > Mehmonxona",
-       descTitle2: "Aviabilet",
+      descTitle:t("Tours.descTitle"),
+       descTitle2:t("Tours.descTitle2"),
       icon3: IoAirplane ,
-      location: " Eng yaxshi manzillar",
+      location: t("Tours.location"),
       icon4: IoLocation,
     },
     {
       bg_card_img: img1,
-      name: "Kanada",
-      persons: "410 buyurtmalar ",
-      price: "$710",
-      kishi: "/kishi",
+      name: "Dubai",
+      persons: t("Tours.title"),
+      price: "$810",
+      kishi: t("Tours.kishi"),
       icon1: PiUsersThreeDuotone,
-      desc: "tur o'z ichiga oladi",
+    desc: t("Tours.desc11"),
       icon2: FaCar,
-      descTitle: " 8 kunlik sayohat > Mehmonxona",
-       descTitle2: "Aviabilet",
+      descTitle:t("Tours.descTitle"),
+       descTitle2:t("Tours.descTitle2"),
       icon3: IoAirplane ,
-      location: " Eng yaxshi manzillar",
+      location: t("Tours.location"),
       icon4: IoLocation,
     },
     {
       bg_card_img: img1,
-      name: "Istanbul",
-      persons: "618 buyurtmalar ",
-      price: "$840",
-      kishi: "/kishi",
+      name: "Dubai",
+      persons: t("Tours.title"),
+      price: "$810",
+      kishi: t("Tours.kishi"),
       icon1: PiUsersThreeDuotone,
-      desc: "tur o'z ichiga oladi",
+    desc: t("Tours.desc11"),
       icon2: FaCar,
-      descTitle: " 6 kunlik sayohat > Mehmonxona",
-       descTitle2: "Aviabilet",
+      descTitle:t("Tours.descTitle"),
+       descTitle2:t("Tours.descTitle2"),
       icon3: IoAirplane ,
-      location: " Eng yaxshi manzillar",
+      location: t("Tours.location"),
       icon4: IoLocation,
     },
     {
       bg_card_img: img1,
-      name: "AQSH",
-      persons: "355 buyurtmalar ",
-      price: "$910",
-      kishi: "/kishi",
+      name: "Dubai",
+      persons: t("Tours.title"),
+      price: "$810",
+      kishi: t("Tours.kishi"),
       icon1: PiUsersThreeDuotone,
-      desc: "tur o'z ichiga oladi",
+    desc: t("Tours.desc11"),
       icon2: FaCar,
-      descTitle: " 4 kunlik sayohat > Mehmonxona",
-       descTitle2: "Aviabilet",
+      descTitle:t("Tours.descTitle"),
+       descTitle2:t("Tours.descTitle2"),
       icon3: IoAirplane ,
-      location: " Eng yaxshi manzillar",
+      location: t("Tours.location"),
       icon4: IoLocation,
     },
     {
       bg_card_img: img1,
-      name: "Yevropa",
-      persons: "417 buyurtmalar ",
-      price: "$877",
-      kishi: "/kishi",
+      name: "Dubai",
+      persons: t("Tours.title"),
+      price: "$810",
+      kishi: t("Tours.kishi"),
       icon1: PiUsersThreeDuotone,
-      desc: "tur o'z ichiga oladi",
+    desc: t("Tours.desc11"),
       icon2: FaCar,
-      descTitle: " 5 kunlik sayohat > Mehmonxona",
-       descTitle2: "Aviabilet",
-     
+      descTitle:t("Tours.descTitle"),
+       descTitle2:t("Tours.descTitle2"),
       icon3: IoAirplane ,
-      location: " Eng yaxshi manzillar",
+      location: t("Tours.location"),
       icon4: IoLocation,
     },
     {
       bg_card_img: img1,
-      name: "DubSharm El-Sheikhai",
-      persons: "415 buyurtmalar ",
-      price: "$805",
-      kishi: "/kishi",
+      name: "Dubai",
+      persons: t("Tours.title"),
+      price: "$810",
+      kishi: t("Tours.kishi"),
       icon1: PiUsersThreeDuotone,
-      desc: "tur o'z ichiga oladi",
+    desc: t("Tours.desc11"),
       icon2: FaCar,
-      descTitle: " 4 kunlik sayohat > Mehmonxona",
-      descTitle2: "Aviabilet",
+      descTitle:t("Tours.descTitle"),
+       descTitle2:t("Tours.descTitle2"),
       icon3: IoAirplane ,
-      location: " Eng yaxshi manzillar",
+      location: t("Tours.location"),
       icon4: IoLocation,
     },
   ]
@@ -124,10 +126,9 @@ export const Tours = () => {
   };
   return (
     <div className='tour_container' id='tours'>
-   <h1 className='tour-title'>Eng Yaxshi Haftalik Takliflarimiz</h1>
+   <h1 className='tour-title'>{t("Tours.title")}</h1>
         <p className='tour-text'>
-        Har bir shaharda faqat siz uchun tuzilgan eng yaxshi haftalik takliflarni kashf eting. <br />
-         O'zingizni sarguzashtlar dunyosida his qiling.
+        {t("Tours.desc")}
         </p>
         <div className="tour_slider">
           <div className="slider-container">
@@ -144,7 +145,7 @@ export const Tours = () => {
                             </div>
                             <div className='card-tour-right'>
                               <p className='tour-card-price'>{item.price}</p>
-                              <p className='tour-card-person'>/Kishi</p>
+                              <p className='tour-card-person'>/{item.kishi}</p>
                             </div>
                             <div className='card-tour-left'></div>
                           </div>

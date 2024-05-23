@@ -7,8 +7,10 @@ import { Map, RouteButton, YMaps } from '@pbe/react-yandex-maps';
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useTranslation } from 'react-i18next';
 
 const Contacts = () => {
+  const {t} = useTranslation()
   const [loading, setLoading] = useState(false);
 
   const SendMessage = (event) => {
@@ -53,28 +55,28 @@ const Contacts = () => {
       <div className='contacts_container' id='contact'>
         <div className='contacts'>
           <div className="contact-box">
-            <p className='contact-text'>yoqtirganingizni tanlang</p>
-            <h2 className='contact-text-title'>O'z joyingizni band qiling</h2>
+            <p className='contact-text'>{t("Contacts.text")}</p>
+            <h2 className='contact-text-title'>{t("Contacts.text1")}</h2>
             <p className='btn-text'>
-              <a className='contact__btn' href='#contacts'>Ko'proq bilish</a>
+              <a className='contact__btn' href='#contacts'>{t("Contacts.text2")}</a>
             </p>
           </div>
 
           <div className="contact-cards">
             <div className="contact-card">
               <div className="icon"><IoCall /></div>
-              <div><p className='phone-text'>Telefon raqam</p></div>
+              <div><p className='phone-text'>{t("Contacts.tel")}</p></div>
               <div><a className='tel-number' href="#contacts">+998 99 299 99 96</a></div>
             </div>
             <div className="contact-card">
               <div className="icon"><FaRegMessage /></div>
-              <div><p className='phone-text'>Bizga email orqali bog'laning</p></div>
+              <div><p className='phone-text'>{t("Contacts.text4")}</p></div>
               <div><a className='tel-number' href="#contacts">zamonbiznestour@mail.ru</a></div>
             </div>
             <div className="contact-card">
               <div className="icon"><CiLocationOn /></div>
-              <div><p className='phone-text'>Ofisimizga tashrif buyuring</p></div>
-              <div><a className='tel-number' href="#contacts">15/25, Chilanzar - 9, Tashkent city</a></div>
+              <div><p className='phone-text'>{t("Contacts.text5")}</p></div>
+              <div><a className='tel-number' href="#contacts">{t("Contacts.text6")}</a></div>
             </div>
           </div>
 
@@ -99,25 +101,25 @@ const Contacts = () => {
             </YMaps>
           </div>
           <h4 className='registr-form-name'>
-            <span className='line'>O'z</span>
-            <span className='form-info line'>joyingizni</span>
-            <span className='line'>band</span>
-            <span className='form-info line'>qiling</span>
+            <span className='line'>{t("Contacts.OZ")}</span>
+            <span className='form-info line'>{t("Contacts.joy")}</span>
+            <span className='line'>{t("Contacts.b")}</span>
+            <span className='form-info line'>{t("Contacts.q")}</span>
           </h4>
 
           <div className='container p-0'>
             <form id="MyForm" onSubmit={SendMessage}>
               <div className='row p-0 m-0'>
                 <div className="col-12 col-lg-6">
-                  <label htmlFor="name" className="form-label pt-4">Ismingiz</label>
+                  <label htmlFor="name" className="form-label pt-4">{t("Contacts.Ism")}</label>
                   <input type="text" placeholder="Sirojiddin" className="form-control rounded-pill" id="name" />
                 </div>
                 <div className="col-12 col-lg-6">
-                  <label htmlFor="telRaqam" className="form-label pt-4">Telefon raqamingiz</label>
+                  <label htmlFor="telRaqam" className="form-label pt-4">{t("Contacts.tel")}</label>
                   <input type="tel" placeholder="+998993729998" className="form-control rounded-pill" id="telRaqam" />
                 </div>
                 <div className="col-12 col-lg-6">
-                  <label htmlFor="kishi" className="form-label pt-4">Necha kishisiz</label>
+                  <label htmlFor="kishi" className="form-label pt-4">{t("Contacts.Necha")}</label>
                   <select className="form-select rounded-pill" id="kishi">
                     <option value="" disabled selected>ex.3 or 4 or 5</option>
                     <option value="1">1</option>
@@ -129,11 +131,11 @@ const Contacts = () => {
                   </select>
                 </div>
                 <div className="col-12 col-lg-6">
-                  <label htmlFor="date" className="form-label pt-4">Uchish sanasi</label>
+                  <label htmlFor="date" className="form-label pt-4">{t("Contacts.uchish")}</label>
                   <input type="date" className="form-control rounded-pill" id="date" />
                 </div>
                 <div className="col-12">
-                  <label htmlFor="adress" className="form-label pt-4">Manzilingizni tanlang</label>
+                  <label htmlFor="adress" className="form-label pt-4">{t("Contacts.Manzil")}</label>
                   <select className="form-select rounded-pill" id="adress">
                     <option value="Antalya">Antalya</option>
                     <option value="Dubai">Dubai</option>
@@ -145,7 +147,7 @@ const Contacts = () => {
                   </select>
                 </div>
                 <div className="col-12">
-                  <label htmlFor="viza" className="form-label pt-4">Visa turini tanlang</label>
+                  <label htmlFor="viza" className="form-label pt-4">{t("Contacts.viza")}</label>
                   <select className="form-select rounded-pill" id="viza">
                     <option value="" disabled selected>Country</option>
                     <option value="Europe">Europe</option>
