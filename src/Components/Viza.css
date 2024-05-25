@@ -166,7 +166,13 @@ ul li{
         background-color: white;
         border-radius: 20px;
     }
-    
+    .tour_container{
+        width: 100%;
+        height: auto;
+        padding: 10px 0;
+        background-color: white;
+       
+    }
 }
 @media screen  and (min-width: 992px){
     .card_tour{
@@ -182,6 +188,75 @@ ul li{
         background-color: white;
         border-radius: 20px;
     }
+    .tour_slider{
+        width: 90%;
+        margin: 24px auto;
+        padding: 10px 0;
     
+    }
+    .tour_container{
+        width: 100%;
+        height: auto;
+        padding: 10px 0;
+        background-color: white;
+       
+    }
     
+}
+@media screen  and (min-width: 1200px){
+    .card_tour{
+        width: 300px;
+        height: 350px;
+        -webkit-box-shadow: 6px 6px 19px -5px rgba(79,75,79,0.4);
+        -moz-box-shadow: 6px 6px 19px -5px rgba(79,75,79,0.4);
+        box-shadow: 6px 6px 19px -5px rgba(79,75,79,0.4);
+        position: absolute;
+        top: 28px;
+        left: 25%;
+        z-index: 10;
+        background-color: white;
+        border-radius: 20px;
+    }
+    .tour_slider{
+        width: 90%;
+        margin: 24px auto;
+        padding: 10px 0;
+    
+    }
+    .tour_container{
+        width: 100%;
+        height: auto;
+        padding: 10px 0;
+        background-color: white;
+       
+    }
+    
+}
+@media screen  and (min-width: 1400px){
+    .card_tour{
+        width: 300px;
+        height: 350px;
+        -webkit-box-shadow: 6px 6px 19px -5px rgba(79,75,79,0.4);
+        -moz-box-shadow: 6px 6px 19px -5px rgba(79,75,79,0.4);
+        box-shadow: 6px 6px 19px -5px rgba(79,75,79,0.4);
+        position: absolute;
+        top: 28px;
+        left: 25%;
+        z-index: 10;
+        background-color: white;
+        border-radius: 20px;
+    }
+    .tour_slider{
+        width: 90%;
+        margin: 24px auto;
+        padding: 0px 0;
+    
+    }
+    .tour_container{
+        width: 100%;
+        height: auto;
+        padding: 10px 0;
+        background-color: white;
+       
+    }
 }

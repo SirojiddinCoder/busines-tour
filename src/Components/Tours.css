@@ -149,6 +149,13 @@ ul li{
         padding: 10px 0;
     
     }
+    .tour_slider{
+        width: 90%;
+        margin: 24px auto;
+        padding: 6px 0;
+    
+    }
+    
     
 }
 
@@ -173,6 +180,12 @@ ul li{
         background-color: white;
         border-radius: 20px;
     }
+    .tour_slider{
+        width: 90%;
+        margin: 24px auto;
+        padding: 8px 0;
+    
+    }
     
 }
 @media screen and (min-width: 992px) {
@@ -195,5 +208,37 @@ ul li{
         background-color: white;
         border-radius: 20px;
     }
+    .tour_slider{
+        width: 90%;
+        margin: 24px auto;
+        padding: 9px 0;
     
+    }
+}
+@media screen and (min-width: 1200px) {
+    .card_bg1{
+        width: 330px !important;
+        height: 450px;
+        border-radius: 20px;
+        position: relative;
+    }
+    .card_tour{
+        width: 300px;
+        height: 350px;
+        -webkit-box-shadow: 6px 6px 19px -5px rgba(79,75,79,0.4);
+        -moz-box-shadow: 6px 6px 19px -5px rgba(79,75,79,0.4);
+        box-shadow: 6px 6px 19px -5px rgba(79,75,79,0.4);
+        position: absolute;
+        top: 28px;
+        left: 25%;
+        z-index: 10;
+        background-color: white;
+        border-radius: 20px;
+    }
+    .tour_slider{
+        width: 90%;
+        margin: 24px auto;
+        padding: 2px 0;
+    
+    }
 }
